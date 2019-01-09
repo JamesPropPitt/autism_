@@ -1,0 +1,34 @@
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.exe.config
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.exe.manifest
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.application
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.exe
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.pdb
+L:\VB Projects\Autism\Autism1\Autism1\bin\Release\Autism1.xml
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.vbprojAssemblyReference.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.Main.resources
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.gameOver.resources
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.Resources.resources
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.GenerateResource.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.CoreCompileInputs.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.exe.manifest
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.application
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.exe
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.xml
+L:\VB Projects\Autism\Autism1\Autism1\obj\Release\Autism1.pdb
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.exe
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.xml
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.pdb
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.exe.config
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.exe.manifest
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.application
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.exe
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.pdb
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.xml
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbprojAssemblyReference.cache
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Main.resources
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.gameOver.resources
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Resources.resources
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.GenerateResource.cache
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.CoreCompileInputs.cache
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.exe.manifest
+C:\Users\propt_000\Downloads\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.application

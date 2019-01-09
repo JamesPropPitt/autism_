@@ -1,0 +1,13 @@
+L:\VB Projects\Autism\Autism1\Autism1\bin\Debug\Autism1.exe.config
+L:\VB Projects\Autism\Autism1\Autism1\bin\Debug\Autism1.exe
+L:\VB Projects\Autism\Autism1\Autism1\bin\Debug\Autism1.pdb
+L:\VB Projects\Autism\Autism1\Autism1\bin\Debug\Autism1.xml
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.vbprojAssemblyReference.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.Main.resources
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.Resources.resources
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.vbproj.GenerateResource.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.vbproj.CoreCompileInputs.cache
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.exe
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.xml
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.pdb
+L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.gameOver.resources
