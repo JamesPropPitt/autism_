@@ -6,8 +6,10 @@ Public Class Main
         'Button 1 has been pressed
         changePicture()
         'Call the change picture function to change the image
-        stage((response)
-        buttonPress += 1
+        If firstStage = 0 Then
+            stage(response)
+            firstStage = 1
+        End If
         'This was an interesting and probably inefficient workaround for a bug I encountered where the game would skip through itself
     End Sub
 
@@ -16,12 +18,13 @@ Public Class Main
         'Button 2 has been pressed
         changePicture()
         'Call the change picture function to change the image
-        If buttonPress = 0 Then
-            stage1(response)
-            buttonPress = 1
+        If firstStage = 0 Then
+            stage(response)
+            firstStage = 1
         End If
         'This was an interesting and probably inefficient workaround for a bug I encountered where the game would skip through itself
     End Sub
+
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Anger = 0
@@ -78,7 +81,7 @@ Public Class Main
     End Sub
 
 
-    Private Sub stage(1)(response)
+    Private Sub stage(response)
         Select Case response
             Case True
                 'If button 1 was pressed
@@ -86,6 +89,7 @@ Public Class Main
                 'Taylor's speech
                 Button1.Text = "Fine thanks, you?"
                 Button2.Text = "What's it to you?"
+
                 'Options for the player
             Case False
                 'If button 2 was pressed

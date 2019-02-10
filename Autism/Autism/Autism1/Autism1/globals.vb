@@ -6,6 +6,5 @@
     Public Emotions As String
     Public Sadness As Integer
     Public buttonPress As Integer
-    Public stage() As Object
-    Public stagen As Integer = 0
+    Public firstStage As Integer = 0
 End Module
