@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Autism1.exe" size="21472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Autism1.exe" size="25056">
       <assemblyIdentity name="Autism1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FYETfM0C1FGZ19NpcHzhEc3fTbMV1H2Mo0OejRFfxA4=</dsig:DigestValue>
+        <dsig:DigestValue>y+yXraVo6AK5khJ5GISle9wLnNDQF3IIEepWPVvRTEg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
