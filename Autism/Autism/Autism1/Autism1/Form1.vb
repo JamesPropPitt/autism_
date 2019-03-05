@@ -1,337 +1,260 @@
 ﻿Imports System.Threading
 
 Public Class Main
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Anger = 0
+        'Set the anger value to 0
+        StageNumber = 1
+        'set the initial stage
+        Label4.Text = StageNumber
+
+        'set the buttonpress to false
+        EmotionNumber = GenRandomInt(1, 4)
+        'Get a value between 1 and 4
+        Select Case EmotionNumber
+            Case 1
+                Emotions = "Neutral"
+                'Set the emotion to Neutral
+                PictureBox1.Image = Image.FromFile("..\..\images\face19.PNG")
+                PictureBox1.Refresh()
+                'Happy start
+                Label1.Text = "Hello! My name is Taylor"
+            'Taylor's speech
+            Case 2
+                Emotions = "Happy"
+                'Set the emotion to Happy
+                PictureBox1.Image = Image.FromFile("..\..\images\face1.PNG")
+                PictureBox1.Refresh()
+                'Neutral start
+                Label1.Text = "Hey, my name is Taylor"
+            'Taylor's speech
+            Case 3
+                Emotions = "Sad"
+                'Set the emotion to Sad
+                PictureBox1.Image = Image.FromFile("..\..\images\face5.PNG")
+                PictureBox1.Refresh()
+                'Sad start
+                Label1.Text = "Hi, I'm Taylor"
+            'Taylor's speech
+            Case 4
+                Emotions = "Angry"
+                'Set the emotion to Angry
+                PictureBox1.Image = Image.FromFile("..\..\images\face11.PNG")
+                PictureBox1.Refresh()
+                'Angry start
+                Label1.Text = "What's up, I'm Taylor"
+                'Taylor's speech
+        End Select
+        Button1.Text = "Hello"
+        Button2.Text = "Go away!"
+        'The 2 options displayed to the user
+        If response <> 0 Then
+            stage(StageNumber, response, EmotionNumber)
+        End If
+        'These lines aren't needed but when you remove them, the code breaks. Go figure.
+
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        response = True
+        response = 1
+        Label5.Text = response
         'Button 1 has been pressed
         changePicture()
         'Call the change picture function to change the image
         buttonPress = True
-        If firstStage = 0 Then
-            stage(response, EmotionNumber)
-            firstStage = 1
-        End If
-        'This was an interesting and probably inefficient workaround for a bug I encountered where the game would skip through itself
+        stage(StageNumber, response, EmotionNumber)
+        StageNumber += 1
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        response = False
+        response = 2
+        Label5.Text = response
         'Button 2 has been pressed
         changePicture()
         'Call the change picture function to change the image
         buttonPress = True
-        If firstStage = 0 Then
-            stage(response, EmotionNumber)
-            firstStage = 1
-        End If
-        'This was an interesting and probably inefficient workaround for a bug I encountered where the game would skip through itself
+        stage(StageNumber, response, EmotionNumber)
+        StageNumber += 1
     End Sub
 
-
-    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Anger = 0
-        'Set the anger value to 0
-        EmotionNumber = GenRandomInt(1, 4)
-        'Get a value between 1 and 4
-        Select Case Emotions
-            Case 1
-                Emotions = "Neutral"
-                'Set the emotion to Neutral
-            Case 2
-                Emotions = "Happy"
-                'Set the emotion to Happy
-            Case 3
-                Emotions = "Sad"
-                'Set the emotion to Sad
-            Case 4
-                Emotions = "Angry"
-                'Set the emotion to Angry
-        End Select
-
-        If EmotionNumber = 1 Then
-            PictureBox1.Image = Image.FromFile("..\..\images\face19.PNG")
-            'Happy start
-            Label1.Text = "Hello! My name is Taylor"
-            'Taylor's speech
-        End If
-
-        If EmotionNumber = 2 Then
-            PictureBox1.Image = Image.FromFile("..\..\images\face1.PNG")
-            'Neutral start
-            Label1.Text = "Hey, my name is Taylor"
-            'Taylor's speech
-        End If
-
-        If EmotionNumber = 3 Then
-            PictureBox1.Image = Image.FromFile("..\..\images\face5.PNG")
-            'Sad start
-            Label1.Text = "Hi, I'm Taylor"
-            'Taylor's speech
-        End If
-
-        If EmotionNumber = 4 Then
-            PictureBox1.Image = Image.FromFile("..\..\images\face11.PNG")
-            'Angry start
-            Label1.Text = "What's up, I'm Taylor"
-            'Taylor's speech
-        End If
-
-        Button1.Text = "Hello"
-        Button2.Text = "Go away!"
-        'The 2 options displayed to the user
-
-    End Sub
-
-
-    Private Sub stage(response, EmotionNumber)
-        Select Case response
-            Case True
-                Select Case EmotionNumber
+    Private Sub stage(stageNo As Integer, response As Boolean, EmotionNumber As Integer)
+        Label4.Text = StageNumber
+        Select Case stageNo 'filter the stages
+            Case 1  'Stage 1
+                Select Case response 'filter true or false
                     Case 1
-                        'If button 1 was pressed and Taylor is happy
-                        Label1.Text = "A lovely day today isn't!? How are you feeling?"
-                        'Taylor's speech
-                        Button1.Text = "Fine thanks, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        While buttonPress = False
-                            If buttonPress = True Then
-                                stage2(response, EmotionNumber)
+                        Select Case EmotionNumber 'filter type of emotion
+                            Case 1
+                                'If button 1 was pressed and Taylor is happy
+                                Label1.Text = "A lovely day today isn't!? How are you feeling?"
+                                'Taylor's speech
+                                Button1.Text = "Fine thanks, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+
+                            Case 2
+                                'If button 1 was pressed and Taylor is neutral
+                                Label1.Text = "How are you?"
+                                'Taylor's speech
+                                Button1.Text = "Fine thanks, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+
+                            Case 3
+                                'If button 1 was pressed and Taylor is sad
+                                Label1.Text = "*sob* How are you?"
+                                'Taylor's speech
+                                Button1.Text = "Fine thanks, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
                                 buttonPress = False
-                            End If
-                        End While
-
+                            Case 4
+                                'If button 1 was pressed and Taylor is angry
+                                Label1.Text = "What a terrible day! Something up with you?"
+                                'Taylor's speech
+                                Button1.Text = "No, I'm fine thanks, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+                                buttonPress = False
+                        End Select
 
                     Case 2
-                        'If button 1 was pressed and Taylor is neutral
-                        Label1.Text = "How are you?"
-                        'Taylor's speech
-                        Button1.Text = "Fine thanks, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
-                    Case 3
-                        'If button 1 was pressed and Taylor is sad
-                        Label1.Text = "*sob* How are you?"
-                        'Taylor's speech
-                        Button1.Text = "Fine thanks, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
-                    Case 4
-                        'If button 1 was pressed and Taylor is angry
-                        Label1.Text = "What a terrible day! Something up with you?"
-                        'Taylor's speech
-                        Button1.Text = "No, I'm fine thanks, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
+                        Select Case EmotionNumber
+                            Case 1
+                                'If button 2 was pressed and Taylor is happy
+                                Label1.Text = "Is something wrong? I'm here for you"
+                                'Taylor's speech
+                                Button1.Text = "No I'm fine thanks, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+                                buttonPress = False
+                            Case 2
+                                'If button 2 was pressed and Taylor is fine
+                                Label1.Text = "What's up?"
+                                'Taylor's speech
+                                Button1.Text = "Nothing, I'm fine, you?"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+                                buttonPress = False
+                            Case 3
+                                'If button 2 was pressed and Taylor is sad
+                                Label1.Text = "Why does everyone hate me?"
+                                'Taylor's speech
+                                Button1.Text = "What's wrong?"
+                                Button2.Text = "Because you're depressing"
+                                'Options for the player
+                                buttonPress = False
+                            Case 4
+                                'If button 2 was pressed and Taylor is angry
+                                Label1.Text = "Are you being funny?"
+                                'Taylor's speech
+                                Button1.Text = "Yeah, sorry, just a bad joke"
+                                Button2.Text = "What's it to you?"
+                                'Options for the player
+                                buttonPress = False
+                        End Select
                 End Select
-
-            Case False
-                Select Case EmotionNumber
+            Case 2  'Stage 2
+                Select Case response
                     Case 1
-                        'If button 2 was pressed and Taylor is happy
-                        Label1.Text = "Is something wrong? I'm here for you"
-                        'Taylor's speech
-                        Button1.Text = "No I'm fine thanks, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
+                        Select Case EmotionNumber
+                            Case 1
+                                'If button 1 was pressed and Taylor is happy
+                                Label1.Text = "I'm fantastic thanks! Never felt better"
+                                'Taylor's speech
+                                Button1.Text = "That's great news! You seem like a lovely person!"
+                                Button2.Text = "What's got you in this mood?"
+                                'Options for the player
+                                buttonPress = False
+                            Case 2
+                                'If button 1 was pressed and Taylor is neutral
+                                Label1.Text = "That's good! I'm feeling well, thank you."
+                                'Taylor's speech
+                                Button1.Text = "Good, you seem like a nice person."
+                                Button2.Text = "What have you been up to today?"
+                                'Options for the player
+                                buttonPress = False
+                            Case 3
+                                'If button 1 was pressed and Taylor is sad
+                                Label1.Text = "I'm feeling awful!"
+                                'Taylor's speech
+                                Button1.Text = "Oh no, but you seem like such a nice person"
+                                Button2.Text = "What's happened?"
+                                'Options for the player
+                                buttonPress = False
+                            Case 4
+                                'If button 1 was pressed and Taylor is angry
+                                Label1.Text = "Everything is out to get me today"
+                                'Taylor's speech
+                                Button1.Text = "Oh? How can the world be so cruel to someone so lovely"
+                                Button2.Text = "What's happened?"
+                                'Options for the player
+                                buttonPress = False
+                        End Select
+
                     Case 2
-                        'If button 2 was pressed and Taylor is fine
-                        Label1.Text = "What's up?"
-                        'Taylor's speech
-                        Button1.Text = "Nothing, I'm fine, you?"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
-                    Case 3
-                        'If button 2 was pressed and Taylor is sad
-                        Label1.Text = "Why does everyone hate me?"
-                        'Taylor's speech
-                        Button1.Text = "What's wrong?"
-                        Button2.Text = "Because you're depressing"
-                        'Options for the player
-                        buttonPress = False
-                        If buttonPress = True Then
-                            stage2(response, EmotionNumber)
-                            buttonPress = False
-                        End If
-                    Case 4
-                        'If button 2 was pressed and Taylor is angry
-                        Label1.Text = "Are you being funny?"
-                        'Taylor's speech
-                        Button1.Text = "Yeah, sorry, just a bad joke"
-                        Button2.Text = "What's it to you?"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage3(response)
-                        End If
+                        Select Case EmotionNumber
+                            Case 1
+                                'If button 2 was pressed and Taylor is feeling happy
+                                Label1.Text = "Not even you can ruin this lovely day"
+                                'Taylor's speech
+                                Button1.Text = "You're right, I'm just not feeling great"
+                                Button2.Text = "Hmph"
+                                'Options for the player
+                                buttonPress = False
+                            Case 2
+                                'If button 2 was pressed and Taylor is feeling neutral
+                                Label1.Text = "What's the matter with you!?"
+                                'Taylor's speech
+                                Button1.Text = "I'm sorry, I'm not feeling great"
+                                Button2.Text = "Nothing"
+                                'Options for the player
+                                buttonPress = False
+                            Case 3
+                                'If button 2 was pressed and Taylor is feeling sad
+                                Label1.Text = "Why do you pick on me?"
+                                'Taylor's speech
+                                Button1.Text = "I'm sorry, I'm not feeling great"
+                                Button2.Text = "I'm not, stop feeling sorry for yourself"
+                                'Options for the player
+                                buttonPress = False
+                            Case 4
+                                'If button 2 was pressed and Taylor is feeling angry
+                                Label1.Text = "Screw this"
+                                'Taylor's speech
+                                Finish()
+                        End Select
                 End Select
-        End Select
-    End Sub
-
-    Private Sub stage2(response, EmotionNumber)
-        Select Case response
-            Case True
-                Select Case EmotionNumber
+            Case 3  'Stage 3
+                Select Case response
                     Case 1
-                        'If button 1 was pressed and Taylor is happy
-                        Label1.Text = "I'm fantastic thanks! Never felt better"
+                        'If button 1 was pressed
+                        Label1.Text = "Right, haha very funny"
                         'Taylor's speech
-                        Button1.Text = "That's great news! You seem like a lovely person!"
-                        Button2.Text = "What's got you in this mood?"
+                        Button1.Text = "Sorry, I don't feel great"
+                        Button2.Text = "I don't care what you think"
                         'Options for the player
-                        If buttonPress = True Then
-                            stage4(response, EmotionNumber)
-                        End If
+                        buttonPress = False
                     Case 2
-                        'If button 1 was pressed and Taylor is neutral
-                        Label1.Text = "That's good! I'm feeling well, thank you."
-                        'Taylor's speech
-                        Button1.Text = "Good, you seem like a nice person."
-                        Button2.Text = "What have you been up to today?"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage4(response, EmotionNumber)
-                        End If
-                    Case 3
-                        'If button 1 was pressed and Taylor is sad
-                        Label1.Text = "I'm feeling awful!"
-                        'Taylor's speech
-                        Button1.Text = "Oh no, but you seem like such a nice person"
-                        Button2.Text = "What's happened?"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage4(response, EmotionNumber)
-                        End If
-                    Case 4
-                        'If button 1 was pressed and Taylor is angry
-                        Label1.Text = "Everything is out to get me today"
-                        'Taylor's speech
-                        Button1.Text = "Oh? How can the world be so cruel to someone so lovely"
-                        Button2.Text = "What's happened?"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage4(response, EmotionNumber)
-                        End If
-                End Select
-
-
-            Case False
-                Select Case EmotionNumber
-                    Case 1
-                        'If button 2 was pressed and Taylor is feeling happy
-                        Label1.Text = "Not even you can ruin this lovely day"
-                        'Taylor's speech
-                        Button1.Text = "You're right, I'm just not feeling great"
-                        Button2.Text = "Hmph"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage5(response, EmotionNumber)
-                        End If
-                    Case 2
-                        'If button 2 was pressed and Taylor is feeling neutral
-                        Label1.Text = "What's the matter with you!?"
-                        'Taylor's speech
-                        Button1.Text = "I'm sorry, I'm not feeling great"
-                        Button2.Text = "Nothing"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage5(response, EmotionNumber)
-                        End If
-                    Case 3
-                        'If button 2 was pressed and Taylor is feeling sad
-                        Label1.Text = "Why do you pick on me?"
-                        'Taylor's speech
-                        Button1.Text = "I'm sorry, I'm not feeling great"
-                        Button2.Text = "I'm not, stop feeling sorry for yourself"
-                        'Options for the player
-                        If buttonPress = True Then
-                            stage5(response, EmotionNumber)
-                        End If
-                    Case 4
-                        'If button 2 was pressed and Taylor is feeling angry
+                        'If button 2 was pressed
                         Label1.Text = "Screw this"
                         'Taylor's speech
                         Finish()
                 End Select
-
-        End Select
-    End Sub
-
-    Private Sub stage3(response)
-        Select Case response
-            Case True
+            Case 4
+                Select Case response
+                    Case 1
                 'If button 1 was pressed
-                Label1.Text = "Right, haha very funny"
-                'Taylor's speech
-                Button1.Text = "Sorry, I don't feel great"
-                Button2.Text = "I don't care what you think"
-                'Options for the player
-            Case False
-                'If button 2 was pressed
-                Label1.Text = "Screw this"
-                'Taylor's speech
-                Finish()
-        End Select
-    End Sub
+                    Case 2
 
-    Private Sub stage4(response, EmotionNumber)
-        Select Case response
-            Case True
-                'If button 1 was pressed
-            Case False
+                End Select
+            Case 5
+            Case 6
+            Case 7
 
         End Select
     End Sub
 
-    Private Sub stage5(response, EmotionNumber)
-        Select Case response
-            Case True
-                'If button 1 was pressed
-            Case False
-
-        End Select
-    End Sub
-
-    Private Sub stage6(response)
-        Select Case response
-            Case True
-                'If button 1 was pressed
-            Case False
-        End Select
-    End Sub
-
-    Private Sub stage7(response)
-        Select Case response
-            Case True
-                'If button 1 was pressed
-            Case False
-
-        End Select
-    End Sub
     Private Sub sadCheck()
         'This checks to see if Taylor is upset and if she continues to be upset, this turns into anger
         If Sadness >= 2 Then
@@ -351,6 +274,7 @@ Public Class Main
         End If
         Anger += 1
         'If the player has not scored 3 anger strikes, then add an anger strike.
+
     End Sub
     Private Sub Finish()
         Label1.Text = "Go away, I don't wanna talk to you anymore."
@@ -377,14 +301,18 @@ Public Class Main
                 PictureBox1.Image = Image.FromFile("..\..\images\face1.PNG")
                 'Content
                 EmotionNumber = 2
+                BackColor = Color.YellowGreen
+
             Case 8
                 PictureBox1.Image = Image.FromFile("..\..\images\face9.PNG")
                 'Laughing
                 EmotionNumber = 2
+                BackColor = Color.YellowGreen
             Case 15
                 PictureBox1.Image = Image.FromFile("..\..\images\face16.PNG")
                 'Enamored
                 EmotionNumber = 2
+                BackColor = Color.YellowGreen
 
             'Sad emotions
             Case 4
@@ -393,24 +321,29 @@ Public Class Main
                 EmotionNumber = 3
                 sadCheck()
                 'Increment Sadness
+                BackColor = Color.DodgerBlue
+
             Case 5
                 PictureBox1.Image = Image.FromFile("..\..\images\face6.PNG")
                 'Suspicious
                 EmotionNumber = 3
                 sadCheck()
                 'Increment Sadness
+                BackColor = Color.DodgerBlue
             Case 7
                 PictureBox1.Image = Image.FromFile("..\..\images\face8.PNG")
                 'Crying
                 EmotionNumber = 3
                 sadCheck()
                 'Increment Sadness
+                BackColor = Color.DodgerBlue
             Case 11
                 PictureBox1.Image = Image.FromFile("..\..\images\face12.PNG")
                 'Embarrassed
                 EmotionNumber = 3
                 sadCheck()
                 'Increment Sadness
+                BackColor = Color.DodgerBlue
 
             'Angry emotions
             Case 9
@@ -425,48 +358,61 @@ Public Class Main
                 EmotionNumber = 4
                 angerCheck()
                 'Increment Anger
+                BackColor = Color.Red
+
             Case 14
                 PictureBox1.Image = Image.FromFile("..\..\images\face15.PNG")
                 'Peturbed
                 EmotionNumber = 4
                 angerCheck()
                 'Increment Anger
+                BackColor = Color.Red
             Case 6
                 PictureBox1.Image = Image.FromFile("..\..\images\face7.PNG")
                 'Provocative
                 EmotionNumber = 4
                 angerCheck()
                 'Increment Anger
+                BackColor = Color.Red
 
             'Neutral emotions
             Case 16
                 PictureBox1.Image = Image.FromFile("..\..\images\face17.PNG")
                 'Tired
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
+
+
             Case 17
                 PictureBox1.Image = Image.FromFile("..\..\images\face18.PNG")
                 'Lost
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
             Case 18
                 PictureBox1.Image = Image.FromFile("..\..\images\face19.PNG")
                 'Alright
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
             Case 3
                 PictureBox1.Image = Image.FromFile("..\..\images\face4.PNG")
                 'Intrigued
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
             Case 2
                 PictureBox1.Image = Image.FromFile("..\..\images\face2.PNG")
                 'Surprised
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
             Case 13
                 PictureBox1.Image = Image.FromFile("..\..\images\face14.PNG")
                 'Fine
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
             Case 12
                 PictureBox1.Image = Image.FromFile("..\..\images\face13.PNG")
                 'Thoughtful
                 EmotionNumber = 1
+                BackColor = Color.LightSlateGray
 
                 'Three happy emotions
                 'Seven neutral emotions
