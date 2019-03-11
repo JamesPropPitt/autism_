@@ -29,6 +29,7 @@ Partial Class Main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,7 +37,7 @@ Partial Class Main
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button1.Font = New System.Drawing.Font("MV Boli", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(942, 239)
+        Me.Button1.Location = New System.Drawing.Point(942, 186)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(301, 136)
         Me.Button1.TabIndex = 0
@@ -47,7 +48,7 @@ Partial Class Main
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button2.Font = New System.Drawing.Font("MV Boli", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(942, 429)
+        Me.Button2.Location = New System.Drawing.Point(942, 343)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(301, 136)
         Me.Button2.TabIndex = 1
@@ -107,12 +108,24 @@ Partial Class Main
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Label5"
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button3.Font = New System.Drawing.Font("MV Boli", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(942, 498)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(301, 136)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(1443, 807)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
@@ -136,4 +149,5 @@ Partial Class Main
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Button3 As Button
 End Class

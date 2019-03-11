@@ -46,7 +46,8 @@ Public Class Main
                 'Taylor's speech
         End Select
         Button1.Text = "Hello"
-        Button2.Text = "Go away!"
+        Button2.Text = "Hi"
+        Button3.Text = "Hey"
         'The 2 options displayed to the user
         If response <> 0 Then
             stage(StageNumber, response, EmotionNumber)
@@ -77,43 +78,58 @@ Public Class Main
         StageNumber += 1
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        response = 3
+        'Button 3 has been pressed
+        Label5.Text = response
+        changePicture()
+        'Call the change picture function to change the image
+        buttonPress = True
+        stage(StageNumber, response, EmotionNumber)
+        StageNumber += 1
+    End Sub
+
     Private Sub stage(stageNo As Integer, response As Boolean, EmotionNumber As Integer)
         Label4.Text = StageNumber
         Select Case stageNo 'filter the stages
             Case 1  'Stage 1
                 Select Case response 'filter true or false
-                    Case 1
+                    Case 1, 3
                         Select Case EmotionNumber 'filter type of emotion
                             Case 1
-                                'If button 1 was pressed and Taylor is happy
+                                'If button 1 or 3 was pressed and Taylor is happy
                                 Label1.Text = "A lovely day today isn't!? How are you feeling?"
                                 'Taylor's speech
                                 Button1.Text = "Fine thanks, you?"
-                                Button2.Text = "What's it to you?"
+                                Button2.Text = "I'm feeling well, how are you?"
+                                Button3.Text = "Good, you?"
                                 'Options for the player
 
                             Case 2
-                                'If button 1 was pressed and Taylor is neutral
+                                'If button 1 or 3 was pressed and Taylor is neutral
                                 Label1.Text = "How are you?"
                                 'Taylor's speech
                                 Button1.Text = "Fine thanks, you?"
-                                Button2.Text = "What's it to you?"
+                                Button2.Text = "Fine, you?"
+                                Button3.Text = "Good, you?"
                                 'Options for the player
 
                             Case 3
-                                'If button 1 was pressed and Taylor is sad
+                                'If button 1 or 3 was pressed and Taylor is sad
                                 Label1.Text = "*sob* How are you?"
                                 'Taylor's speech
                                 Button1.Text = "Fine thanks, you?"
-                                Button2.Text = "What's it to you?"
+                                Button2.Text = "Okay, I guess, you?"
+                                Button3.Text = "Good, you?"
                                 'Options for the player
                                 buttonPress = False
                             Case 4
-                                'If button 1 was pressed and Taylor is angry
+                                'If button 1 or 3 was pressed and Taylor is angry
                                 Label1.Text = "What a terrible day! Something up with you?"
                                 'Taylor's speech
                                 Button1.Text = "No, I'm fine thanks, you?"
                                 Button2.Text = "What's it to you?"
+                                Button3.Text = "Good, you?"
                                 'Options for the player
                                 buttonPress = False
                         End Select
@@ -125,7 +141,8 @@ Public Class Main
                                 Label1.Text = "Is something wrong? I'm here for you"
                                 'Taylor's speech
                                 Button1.Text = "No I'm fine thanks, you?"
-                                Button2.Text = "What's it to you?"
+                                Button2.Text = "Not really, you?"
+                                Button3.Text = "Something wrong with you? How are you feeling?"
                                 'Options for the player
                                 buttonPress = False
                             Case 2
@@ -133,33 +150,36 @@ Public Class Main
                                 Label1.Text = "What's up?"
                                 'Taylor's speech
                                 Button1.Text = "Nothing, I'm fine, you?"
-                                Button2.Text = "What's it to you?"
+                                Button2.Text = "Nothing at all, you?"
+                                Button3.Text = "Not much, you?"
                                 'Options for the player
                                 buttonPress = False
                             Case 3
                                 'If button 2 was pressed and Taylor is sad
-                                Label1.Text = "Why does everyone hate me?"
+                                Label1.Text = "You okay?"
                                 'Taylor's speech
-                                Button1.Text = "What's wrong?"
-                                Button2.Text = "Because you're depressing"
+                                Button1.Text = "Yeah, you alright?"
+                                Button2.Text = "Pretty much, yourself?"
+                                Button3.Text = "I guess, you?"
                                 'Options for the player
                                 buttonPress = False
                             Case 4
                                 'If button 2 was pressed and Taylor is angry
-                                Label1.Text = "Are you being funny?"
+                                Label1.Text = "Whatever. You good?"
                                 'Taylor's speech
-                                Button1.Text = "Yeah, sorry, just a bad joke"
-                                Button2.Text = "What's it to you?"
+                                Button1.Text = "Yeah, you alright?"
+                                Button2.Text = "What's up?"
+                                Button3.Text = "Is something wrong with you? How are you feeling?"
                                 'Options for the player
                                 buttonPress = False
                         End Select
                 End Select
             Case 2  'Stage 2
                 Select Case response
-                    Case 1
+                    Case 1, 2
                         Select Case EmotionNumber
                             Case 1
-                                'If button 1 was pressed and Taylor is happy
+                                'If button 1 or 2 was pressed and Taylor is happy
                                 Label1.Text = "I'm fantastic thanks! Never felt better"
                                 'Taylor's speech
                                 Button1.Text = "That's great news! You seem like a lovely person!"
@@ -167,7 +187,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 2
-                                'If button 1 was pressed and Taylor is neutral
+                                'If button 1 or 2 was pressed and Taylor is neutral
                                 Label1.Text = "That's good! I'm feeling well, thank you."
                                 'Taylor's speech
                                 Button1.Text = "Good, you seem like a nice person."
@@ -175,7 +195,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 3
-                                'If button 1 was pressed and Taylor is sad
+                                'If button 1 or 2 was pressed and Taylor is sad
                                 Label1.Text = "I'm feeling awful!"
                                 'Taylor's speech
                                 Button1.Text = "Oh no, but you seem like such a nice person"
@@ -183,7 +203,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 4
-                                'If button 1 was pressed and Taylor is angry
+                                'If button 1 or 2 was pressed and Taylor is angry
                                 Label1.Text = "Everything is out to get me today"
                                 'Taylor's speech
                                 Button1.Text = "Oh? How can the world be so cruel to someone so lovely"
@@ -192,10 +212,10 @@ Public Class Main
                                 buttonPress = False
                         End Select
 
-                    Case 2
+                    Case 3
                         Select Case EmotionNumber
                             Case 1
-                                'If button 2 was pressed and Taylor is feeling happy
+                                'If button 3 was pressed and Taylor is feeling happy
                                 Label1.Text = "Not even you can ruin this lovely day"
                                 'Taylor's speech
                                 Button1.Text = "You're right, I'm just not feeling great"
@@ -203,7 +223,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 2
-                                'If button 2 was pressed and Taylor is feeling neutral
+                                'If button 3 was pressed and Taylor is feeling neutral
                                 Label1.Text = "What's the matter with you!?"
                                 'Taylor's speech
                                 Button1.Text = "I'm sorry, I'm not feeling great"
@@ -211,7 +231,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 3
-                                'If button 2 was pressed and Taylor is feeling sad
+                                'If button 3 was pressed and Taylor is feeling sad
                                 Label1.Text = "Why do you pick on me?"
                                 'Taylor's speech
                                 Button1.Text = "I'm sorry, I'm not feeling great"
@@ -219,7 +239,7 @@ Public Class Main
                                 'Options for the player
                                 buttonPress = False
                             Case 4
-                                'If button 2 was pressed and Taylor is feeling angry
+                                'If button 3 was pressed and Taylor is feeling angry
                                 Label1.Text = "Screw this"
                                 'Taylor's speech
                                 Finish()
