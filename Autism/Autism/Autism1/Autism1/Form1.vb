@@ -142,7 +142,7 @@ Public Class Main
                                 'Taylor's speech
                                 Button1.Text = "No I'm fine thanks, you?"
                                 Button2.Text = "Not really, you?"
-                                Button3.Text = "Something wrong with you? How are you feeling?"
+                                Button3.Text = "Nope"
                                 'Options for the player
                                 buttonPress = False
                             Case 2
@@ -151,7 +151,7 @@ Public Class Main
                                 'Taylor's speech
                                 Button1.Text = "Nothing, I'm fine, you?"
                                 Button2.Text = "Nothing at all, you?"
-                                Button3.Text = "Not much, you?"
+                                Button3.Text = "Nothing"
                                 'Options for the player
                                 buttonPress = False
                             Case 3
@@ -160,7 +160,7 @@ Public Class Main
                                 'Taylor's speech
                                 Button1.Text = "Yeah, you alright?"
                                 Button2.Text = "Pretty much, yourself?"
-                                Button3.Text = "I guess, you?"
+                                Button3.Text = "Yeah"
                                 'Options for the player
                                 buttonPress = False
                             Case 4
@@ -169,7 +169,7 @@ Public Class Main
                                 'Taylor's speech
                                 Button1.Text = "Yeah, you alright?"
                                 Button2.Text = "What's up?"
-                                Button3.Text = "Is something wrong with you? How are you feeling?"
+                                Button3.Text = "Yeah"
                                 'Options for the player
                                 buttonPress = False
                         End Select
@@ -182,32 +182,36 @@ Public Class Main
                                 'If button 1 or 2 was pressed and Taylor is happy
                                 Label1.Text = "I'm fantastic thanks! Never felt better"
                                 'Taylor's speech
-                                Button1.Text = "That's great news! You seem like a lovely person!"
-                                Button2.Text = "What's got you in this mood?"
+                                Button1.Text = "That's great news! What ya doing?"
+                                Button2.Text = "Anything good happen?"
+                                Button3.Text = "Nice, doing much?"
                                 'Options for the player
                                 buttonPress = False
                             Case 2
                                 'If button 1 or 2 was pressed and Taylor is neutral
                                 Label1.Text = "That's good! I'm feeling well, thank you."
                                 'Taylor's speech
-                                Button1.Text = "Good, you seem like a nice person."
-                                Button2.Text = "What have you been up to today?"
+                                Button1.Text = "Good, What are you up to?"
+                                Button2.Text = "How's your day been going?"
+                                Button3.Text = "What's new?"
                                 'Options for the player
                                 buttonPress = False
                             Case 3
                                 'If button 1 or 2 was pressed and Taylor is sad
                                 Label1.Text = "I'm feeling awful!"
                                 'Taylor's speech
-                                Button1.Text = "Oh no, but you seem like such a nice person"
-                                Button2.Text = "What's happened?"
+                                Button1.Text = "That sucks, doing anything?"
+                                Button2.Text = "Why?"
+                                Button3.Text = "Guess something terrible happened"
                                 'Options for the player
                                 buttonPress = False
                             Case 4
                                 'If button 1 or 2 was pressed and Taylor is angry
                                 Label1.Text = "Everything is out to get me today"
                                 'Taylor's speech
-                                Button1.Text = "Oh? How can the world be so cruel to someone so lovely"
+                                Button1.Text = "Why do you think that?"
                                 Button2.Text = "What's happened?"
+                                Button3.Text = "Something happen today?"
                                 'Options for the player
                                 buttonPress = False
                         End Select
@@ -216,60 +220,121 @@ Public Class Main
                         Select Case EmotionNumber
                             Case 1
                                 'If button 3 was pressed and Taylor is feeling happy
-                                Label1.Text = "Not even you can ruin this lovely day"
+                                Label1.Text = "Right, well I'm fine, thanks..."
                                 'Taylor's speech
-                                Button1.Text = "You're right, I'm just not feeling great"
-                                Button2.Text = "Hmph"
+                                Button1.Text = "Cool, up to much?"
+                                Button2.Text = "Why?"
+                                Button3.Text = "Doing much today?"
+                                angerCheck()
                                 'Options for the player
                                 buttonPress = False
                             Case 2
                                 'If button 3 was pressed and Taylor is feeling neutral
-                                Label1.Text = "What's the matter with you!?"
+                                Label1.Text = "I'm okay too, thanks for asking."
                                 'Taylor's speech
-                                Button1.Text = "I'm sorry, I'm not feeling great"
-                                Button2.Text = "Nothing"
+                                Button1.Text = "Why are you acting this way?"
+                                Button2.Text = "Sorry, anything interesting happen recently?"
+                                Button3.Text = "Alright, What have you been up to?"
+                                angerCheck()
                                 'Options for the player
                                 buttonPress = False
                             Case 3
                                 'If button 3 was pressed and Taylor is feeling sad
-                                Label1.Text = "Why do you pick on me?"
+                                Label1.Text = "Yeah, I'm fine too"
                                 'Taylor's speech
-                                Button1.Text = "I'm sorry, I'm not feeling great"
-                                Button2.Text = "I'm not, stop feeling sorry for yourself"
+                                Button1.Text = "That's good, any reason why?"
+                                Button2.Text = "Oh, I'm sorry, everything okay?"
+                                Button3.Text = "Something happen?"
+                                angerCheck()
                                 'Options for the player
                                 buttonPress = False
                             Case 4
                                 'If button 3 was pressed and Taylor is feeling angry
-                                Label1.Text = "Screw this"
+                                Label1.Text = "Cool, I'm fine too, not that you care"
                                 'Taylor's speech
+                                Button1.Text = "Something up with you?"
+                                Button2.Text = "Something put you in this mood?"
+                                Button3.Text = "Why are you like this?"
+                                angerCheck()
+
                                 Finish()
                         End Select
                 End Select
             Case 3  'Stage 3
                 Select Case response
-                    Case 1
+                    Case 1, 2, 3
                         'If button 1 was pressed
-                        Label1.Text = "Right, haha very funny"
+                        Label1.Text = "Well I just finished creating an amazing game that I had been working on for a few months"
                         'Taylor's speech
-                        Button1.Text = "Sorry, I don't feel great"
-                        Button2.Text = "I don't care what you think"
+                        Button1.Text = "Oh yeah?"
+                        Button2.Text = "So?"
+                        Button3.Text = "Why does that make you feel that way?"
                         'Options for the player
                         buttonPress = False
-                    Case 2
-                        'If button 2 was pressed
-                        Label1.Text = "Screw this"
-                        'Taylor's speech
-                        Finish()
                 End Select
             Case 4
                 Select Case response
-                    Case 1
-                'If button 1 was pressed
-                    Case 2
+                    Case 1, 3
+                        'If button 1  or 3 was pressed
+                        Label1.Text = "It means I have nothing to do now"
+                        'Taylor's speech
+                        Button1.Text = "Why is that bad?"
+                        Button2.Text = "Why is that good?"
+                        Button3.Text = "So what are you gonna do now?"
+                        'Options for the player
+                        buttonPress = False
 
+                    Case 2
+                        'If button 2 was pressed
+                        Label1.Text = "It means I have to look forward and think of something else to do"
+                        'Taylor's speech
+                        Button1.Text = "Like?"
+                        Button2.Text = "What?"
+                        Button3.Text = "So?"
+                        'Options for the player
+                        buttonPress = False
                 End Select
+
             Case 5
+                Select Case response
+                    Case 1, 3
+                        Label1.Text = "Well I guess I'm left to my own devices which can be kinda scary"
+                        'Taylor's speech
+                        Button1.Text = "Cool"
+                        Button2.Text = "Remember, tomorrow is only found in the calendar of fools"
+                        Button3.Text = "YOLO"
+                        'Options for the player
+                        buttonPress = False
+                    Case 2
+                        Label1.Text = "The future is exciting, don't you think?"
+                        'Taylor's speech
+                        Button1.Text = "Tomorrow is only found in the calendar of fools"
+                        Button2.Text = "Yes, life is full of opportunities every day"
+                        Button3.Text = "That's what I like to think"
+                        'Options for the player
+                        buttonPress = False
+                End Select
+
             Case 6
+                Select Case response
+                    Case 1
+                        Label1.Text = "Why have you got to put such a downer on everything?"
+                        'Taylor's speech
+                        Button1.Text = "Excuse me?"
+                        Button2.Text = "I'm just not interested in talking to you"
+                        Button3.Text = "I'm tired"
+                        'Options for the player
+                        buttonPress = False
+
+                    Case 2, 3
+                        Label1.Text = "Wow! You're so inspirational, I'm going to put that on my wall from now on"
+                        'Taylor's speech
+                        Button1.Text = "Thanks"
+                        Button2.Text = "???"
+                        Button3.Text = "???"
+                        'Options for hte player
+                        buttonPress = False
+                End Select
             Case 7
 
         End Select
@@ -301,6 +366,7 @@ Public Class Main
         'Taylor's speech
         Button1.Enabled = False
         Button2.Enabled = False
+        Button3.Enabled = False
         'Disable all the options for the player.
         Dim f As New Form
         'Create new window
