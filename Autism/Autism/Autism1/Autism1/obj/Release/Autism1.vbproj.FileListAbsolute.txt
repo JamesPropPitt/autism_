@@ -58,3 +58,12 @@ C:\Users\jp187238\Downloads\autism_-master\autism_-master\Autism\Autism\Autism1\
 C:\Users\jp187238\Downloads\autism_-master\autism_-master\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.exe
 C:\Users\jp187238\Downloads\autism_-master\autism_-master\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.xml
 C:\Users\jp187238\Downloads\autism_-master\autism_-master\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.pdb
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbprojAssemblyReference.cache
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Main.resources
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.gameOver.resources
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Resources.resources
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.GenerateResource.cache
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.CoreCompileInputs.cache
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.exe
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.xml
+D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.pdb
