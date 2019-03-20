@@ -91,7 +91,7 @@ Partial Class Main
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MV Boli", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label4.Location = New System.Drawing.Point(935, 654)
+        Me.Label4.Location = New System.Drawing.Point(1141, 744)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(122, 41)
         Me.Label4.TabIndex = 7
@@ -102,7 +102,7 @@ Partial Class Main
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("MV Boli", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label5.Location = New System.Drawing.Point(1200, 654)
+        Me.Label5.Location = New System.Drawing.Point(1300, 744)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(121, 41)
         Me.Label5.TabIndex = 8

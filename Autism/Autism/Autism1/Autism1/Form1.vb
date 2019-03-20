@@ -329,13 +329,85 @@ Public Class Main
                     Case 2, 3
                         Label1.Text = "Wow! You're so inspirational, I'm going to put that on my wall from now on"
                         'Taylor's speech
-                        Button1.Text = "Thanks"
-                        Button2.Text = "???"
-                        Button3.Text = "???"
+                        Button1.Text = "Really?"
+                        Button2.Text = "I got it off the back of a milk carton"
+                        Button3.Text = "Sweet"
                         'Options for hte player
                         buttonPress = False
                 End Select
             Case 7
+                Select Case response
+                    Case 1
+                        Label1.Text = "You heard, you're astonishing"
+                        'Taylor's speech
+                        Button1.Text = "Thanks"
+                        Button2.Text = "I appreciate it"
+                        Button3.Text = "Happy I could help, to be honest"
+                        'Options for the player
+                        buttonPress = False
+
+                    Case 2
+                        Label1.Text = "How ironic, quite a bold statement coming from something so small"
+                        'Taylor's speech
+                        Button1.Text = "What's that supposed to mean?"
+                        Button2.Text = "I know right"
+                        Button3.Text = "I'm confused"
+                        'Options for the player
+                        buttonPress = False
+
+                    Case 3
+                        Label1.Text = "Well, I've gotta get going now but it was nice speaking to you"
+                        'Taylor's speech
+                        Button1.Text = "Thanks, bye!"
+                        Button2.Text = "Cheers, bye!"
+                        Button3.Text = "Bye!"
+                        'Options for hthe player
+                        buttonPress = False
+                        Dim f As New Form
+                        'create new window
+                        f = gameOver
+                        f.Show()
+
+
+                End Select
+            Case 8
+                Select Case response
+                    Case 1
+                        Label1.Text = "Look, this talk was interesting but I've gotta go"
+                        'Taylor's speech
+                        Button1.Text = "Bye then"
+                        Button2.Text = "No worries, see ya!"
+                        Button3.Text = "Goodbye"
+                        buttonPress = False
+                        Dim f As New Form
+                        'create new window
+                        f = gameOver
+                        f.Show()
+
+                    Case 2
+                        Label1.Text = "Well, I've gotta dash but I'll talk to you later"
+                        'Taylor's speech
+                        Button1.Text = "Bye then"
+                        Button2.Text = "No worries, see ya!"
+                        Button3.Text = "Goodbye"
+                        buttonPress = False
+                        Dim f As New Form
+                        'create new window
+                        f = gameOver
+                        f.Show()
+
+                    Case 3
+                        Label1.Text = "Hey, it doesn't matter, bye"
+                        'Taylor's speech
+                        Button1.Text = "Bye then"
+                        Button2.Text = "What?"
+                        Button3.Text = "Goodbye"
+                        buttonPress = False
+                        Dim f As New Form
+                        'create new window
+                        f = gameOver
+                        f.Show()
+                End Select
 
         End Select
     End Sub
@@ -521,6 +593,14 @@ Public Class Main
     End Function
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
 End Class
