@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Autism1.exe" size="25056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Autism1.exe" size="26592">
       <assemblyIdentity name="Autism1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tYAwPh7A2P7aswv4DYYn2pECUR7mR1Pw2B8rDLC+pnk=</dsig:DigestValue>
+        <dsig:DigestValue>TUljsqJWXkH2rmcPw3Bm2v2a+yea6Q1GrjTuJIUmG64=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Autism1.exe.config" size="188">
+  <file name="Autism1.exe.config" size="183">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>c922zfRb5ORzqEo8SDjt8Mx8lDMhGTWhqKcK/oileDM=</dsig:DigestValue>
+      <dsig:DigestValue>042LiEJ446KnVzFq0f/nROM5GQhKLtvYxsgstLrB6/g=</dsig:DigestValue>
     </hash>
   </file>
   <file name="images\face1.PNG" size="146803">
