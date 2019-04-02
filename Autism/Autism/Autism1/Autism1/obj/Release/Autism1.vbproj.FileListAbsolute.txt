@@ -38,7 +38,6 @@ F:\documents\autism_\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.applicati
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.exe
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.pdb
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\bin\Release\Autism1.xml
-F:\documents\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbprojAssemblyReference.cache
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Main.resources
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.gameOver.resources
 F:\documents\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.Resources.resources
@@ -67,3 +66,4 @@ D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbproj.CoreC
 D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.exe
 D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.xml
 D:\Jwbite\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.pdb
+F:\documents\autism_\Autism\Autism\Autism1\Autism1\obj\Release\Autism1.vbprojAssemblyReference.cache

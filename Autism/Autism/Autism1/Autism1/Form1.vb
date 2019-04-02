@@ -920,7 +920,7 @@ Public Class Main
 
         'This checks to see if the game is over
 
-        If Anger >= 3 Then
+        If Anger >= 4 Then
 
             Finish()
 
