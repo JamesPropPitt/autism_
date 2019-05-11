@@ -1,4 +1,4 @@
-﻿Module globals
+﻿Public Module globals
     Public response As Integer = 0
     Public waiting As Boolean
     Public Emotion As Integer

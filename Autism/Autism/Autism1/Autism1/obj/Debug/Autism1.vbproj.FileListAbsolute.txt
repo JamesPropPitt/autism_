@@ -11,3 +11,25 @@ L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.exe
 L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.xml
 L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.pdb
 L:\VB Projects\Autism\Autism1\Autism1\obj\Debug\Autism1.gameOver.resources
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.exe.config
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.exe.manifest
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.application
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.exe
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.pdb
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Autism1.xml
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.vbprojAssemblyReference.cache
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.Main.resources
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.gameOver.resources
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.Resources.resources
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.vbproj.GenerateResource.cache
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.vbproj.CoreCompileInputs.cache
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.exe.manifest
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.application
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.vbproj.CopyComplete
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.exe
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.xml
+E:\Adrir\Documents\autism_\Autism\Autism\Autism1\Autism1\obj\Debug\Autism1.pdb

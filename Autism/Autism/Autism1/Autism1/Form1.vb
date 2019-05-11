@@ -1232,7 +1232,7 @@ Public Class Main
 
     End Sub
 
-    Private Function GenRandomInt(inMin As Int32, inMax As Int32) As Int32
+    Public Function GenRandomInt(inMin As Int32, inMax As Int32) As Int32
 
         Static staticRandomGenerator As New System.Random
 
